@@ -1,10 +1,30 @@
+# React-simple-img test app
+
+This repository contains a minimal example to illustrate an issue
+in [react-simple-img](https://github.com/bluebill1049/react-simple-img)
+with updates to the React component tree.
+
+If you run the app, you should see a few rows of FavIcons with a text label
+showing the associated domain name, and a button labeled "Delete Row" at
+the bottom.
+
+During the initial render, the FavIcons and domain names match.
+
+If you press the "Delete Row" button, the second row of FavIcon (and text label)
+will be deleted. However, now the images and associated labels are mis-matched --
+the wrong FavIcon is shown for all domains other than the first row.
+(What should happen is that the row should be removed but all FavIcon images
+should still match the associated text label after the deletion.)
+
+# Instructions from create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
